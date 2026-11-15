@@ -1,0 +1,36 @@
+{
+  "name": "n8n-hubspot-meeting-no-show-re-engagement-pipeline",
+  "version": "1.0.0",
+  "description": "n8n workflow that reacts to HubSpot meeting no-shows and Calendly no-show webhooks: moves the deal to a re-engagement stage, routes a consent-aware SMS or email re-engagement, and creates a high-priority rep task. License: MIT © 2026 dhRobin Systems. DISCLAIMER.md · Licensed under the MIT License. License: MIT © 2026 dhRobin Systems · Provided as-is, see the disclaimer.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "no-show-pipeline": "src/index.js"
+  },
+  "scripts": {
+    "lint": "node scripts/lint.js",
+    "test": "node --test tests/*.test.js",
+    "check:workflow": "node scripts/build-workflow.js --check",
+    "build:workflow": "node scripts/build-workflow.js",
+    "verify": "npm run lint && npm run check:workflow && npm test",
+    "demo": "node src/index.js demo",
+    "replay": "node src/index.js replay",
+    "run:meetings": "node src/index.js meetings",
+    "properties:create": "node scripts/create-properties.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "n8n",
+    "hubspot",
+    "no-show",
+    "calendly",
+    "twilio",
+    "re-engagement",
+    "revops"
+  ],
+  "author": "DH Robin | dhRobin Systems (https://dhrobinsystems.com)",
+  "homepage": "https://dhrobinsystems.com",
+  "license": "MIT"
+}
