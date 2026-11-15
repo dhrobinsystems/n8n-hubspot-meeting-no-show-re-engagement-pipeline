@@ -40,7 +40,6 @@ Out of the box it is **offline and silent**:
 
 ## Architecture overview
 
-[![dhRobin Systems Architecture](https://img.shields.io/badge/dhRobin_Systems-n8n_HubSpot_Engine-00D4B2?style=for-the-badge&logo=github)](https://github.com/dhrobinsystems/n8n-hubspot-meeting-no-show-re-engagement-pipeline)
 
 ```
 HubSpot meeting workflow ("Meeting outcome changed") ─┐
