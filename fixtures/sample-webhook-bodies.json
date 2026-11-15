@@ -1,0 +1,50 @@
+{
+  "_notice": "DISCLAIMER.md · Licensed under the MIT License. License: MIT © 2026 dhRobin Systems · Provided as-is, see the disclaimer.",
+  "_description": "Fictional webhook bodies matching the bundled demo records: five HubSpot meeting workflow calls ({ objectId }) and three Calendly events. Send each body as its own request.",
+  "bodies": [
+    {
+      "objectId": 301
+    },
+    {
+      "objectId": 302
+    },
+    {
+      "objectId": 303
+    },
+    {
+      "objectId": 304
+    },
+    {
+      "objectId": 305
+    },
+    {
+      "event": "invitee_no_show.created",
+      "created_at": "2026-11-16T15:20:00.000000Z",
+      "payload": {
+        "uri": "https://api.calendly.com/invitee_no_shows/EXAMPLENOSHOW001",
+        "invitee": "https://api.calendly.com/scheduled_events/EXAMPLEEVENT0001/invitees/EXAMPLEINVITEE01",
+        "created_at": "2026-11-16T15:20:00.000000Z"
+      }
+    },
+    {
+      "event": "invitee_no_show.created",
+      "created_at": "2026-11-16T15:21:00.000000Z",
+      "payload": {
+        "uri": "https://api.calendly.com/invitee_no_shows/EXAMPLENOSHOW002",
+        "email": "not.in.crm@example.com",
+        "scheduled_event": {
+          "name": "Product demo",
+          "start_time": "2026-11-16T15:00:00.000000Z"
+        }
+      }
+    },
+    {
+      "event": "invitee_no_show.deleted",
+      "created_at": "2026-11-16T15:22:00.000000Z",
+      "payload": {
+        "uri": "https://api.calendly.com/invitee_no_shows/EXAMPLENOSHOW003",
+        "email": "jamie.demo@example.com"
+      }
+    }
+  ]
+}
