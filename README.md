@@ -40,6 +40,7 @@ Out of the box it is **offline and silent**:
 
 ## Architecture overview
 
+![Workflow Overview](assets/workflow-overview.png)
 
 ```
 HubSpot meeting workflow ("Meeting outcome changed") ─┐
